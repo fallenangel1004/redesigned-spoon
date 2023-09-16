@@ -144,7 +144,14 @@ void sortlist()
         current = current->next;
     }
 }
-
+//void mergeLists(struct ShoppingItem **list1,struct ShoppingItem **list2){
+	struct ShoppingItem *current=*list1;
+	//
+	
+	;
+	current->next=*list2; 
+	*list2=NULL;
+}
 void deleteItem(char itemName[], int deleteALL)
 {
     Nodeer* current = shoppinglist;
