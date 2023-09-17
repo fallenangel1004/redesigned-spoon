@@ -1,15 +1,4 @@
-ÉÙÅ®´º 2022/11/11 13:01:07
-³¿êØ£¬Õâ¸öÖ¾Ô¸»î¶¯ÎÒÒ²Ïë±¨
 
-ÉÙÅ®´º 2023/2/27 17:36:21
-
-
-ÉÙÅ®´º(emo°æ) 2023/4/19 18:50:51
-
-
-¶Ô·½ÒÑ³É¹¦½ÓÊÕÁËÄã·¢ËÍµÄÀëÏßÎÄ¼ş¡°3221311409²Ì¬TÓ¨.docx¡±(103.81KB)¡£
-
-ÉÙÅ®´º(Ê¬Ìå°æ) 22:30:45
 #include <stdio.h>
 #include <stdlib.h>
 #include <malloc.h>
@@ -61,10 +50,10 @@ void remove(char item[])
 void dis()
 {
 	struct shopping*c=h;
-	printf("¹ºÎïÇåµ¥£º\n");
+	printf("è´­ç‰©æ¸…å•ï¼š\n");
 	while(c!=NULL)
 	{
-		printf("%s-ÊıÁ¿£º%d\n",c->name,c->q);
+		printf("%s-æ•°é‡ï¼š%d\n",c->name,c->q);
 		c=c->next;
 	}
 }
@@ -104,17 +93,17 @@ int tot()
 void find(char item[])
 {
 	shop*c=h;
-	printf("²éÕÒÉÌÆ·\"%s\":\n",item);
+	printf("æŸ¥æ‰¾å•†å“\"%s\":\n",item);
 	while(c!=NULL)
 	{
 		if(strcmp(c->name,item)==0)
 		{
-			printf("%s-ÊıÁ¿:%d\n",c->name,c->num);
+			printf("%s-æ•°é‡:%d\n",c->name,c->num);
 			return;
 		}
 		c=c->next;
 	}
-	printf("Î´ÕÒµ½ÉÌÆ·\"%s\"¡£\n",item);
+	printf("æœªæ‰¾åˆ°å•†å“\"%s\"ã€‚\n",item);
 }
 void sort()
 {
@@ -193,7 +182,7 @@ int  main()
 	 remove(char item[]);
 }
 
-³¿êØ 23:30:51
+æ™¨æ›¦ 23:30:51
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -253,9 +242,9 @@ typedef struct shoppingitem
  void display()
  {
  	SS*current=l;
- 	PRINTF("¹ºÎïÇåµ¥£º\n");
+ 	PRINTF("è´­ç‰©æ¸…å•ï¼š\n");
  	while(current!=NULL){
- 		printf("%s -ÊıÁ¿: %d\n",current->name,current->quantity);
+ 		printf("%s -æ•°é‡: %d\n",current->name,current->quantity);
  		current=current->next;
 	 }
  }
@@ -295,15 +284,15 @@ typedef struct shoppingitem
  void finditem(char itemname[])
  {
  	SS*current=l;
- 	printf("²éÕÒÉÌÆ·\"%s\":\n",itemname);
+ 	printf("æŸ¥æ‰¾å•†å“\"%s\":\n",itemname);
  	while(current!=NULL){
  		if(strcmp(current->name,itemname)==0){
- 			printf("%s-ÊıÁ¿:%d\n",current->name,current->quantity);
+ 			printf("%s-æ•°é‡:%d\n",current->name,current->quantity);
  			return ;
 		 }
 		 current=current->next;
 	 }
-	 printf("Î´ÕÒµ½ÉÌÆ·\"%s\"¡£\n",itemname);
+	 printf("æœªæ‰¾åˆ°å•†å“\"%s\"ã€‚\n",itemname);
  }
  void sort(){
  	SS*current=l;
